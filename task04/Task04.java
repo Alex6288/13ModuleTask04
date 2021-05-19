@@ -139,6 +139,7 @@ class SecondThread implements Runnable {
                         pw.println(line.trim());
                         System.out.println("записываем строку : " + line); //todo убрать после отладки
                     });
+            //todo здесть предполагается ошибка, что то записывает
             System.out.println("Второй поток закончил работу");
         } catch (InterruptedException e) {
             e.printStackTrace();
